@@ -1,0 +1,27 @@
+guia: https://www.youtube.com/watch?v=Sha9IJGuTCg
+
+1. instalacion de deno
+iwr https://deno.land/x/install/install.ps1 -useb | iex
+
+2. seleccionar power shell
+
+3. ejecutar deno = deno run .... <- archivo
+
+4. dirigirse a los paquetes de denoland
+https://deno.land/x <- buscador de paques centralizado
+https://deno.land/std
+
+5. en vscode hay una extencion llamanda 
+publisher:"denoland"
+
+6. para importar paquetes a travez de deno al cached usar
+deno install url -> ejm -> deno install https://deno.land/x/oak/mod.ts
+
+7. para ejecutra un programa pide unos permisos cuando se pida ejecutar con 
+deno run --allow-net index.ts
+
+8. para ejecutar algo parecido a nodemon que es el de node.js que refresca automaticamente el sercvidor usar:
+-> deno install --allow-read --allow-run --allow-write -f --unstable https://deno.land/x/denon/denon.ts
+
+9. para ejecutar un ejercicion serial -> solo funciona con shell
+ denon run --allow-net .... -> denon run --allow-net index.ts
