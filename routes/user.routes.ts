@@ -1,5 +1,5 @@
 import {Router} from 'https://deno.land/x/oak/mod.ts'
-import * as ctrUsuarios from '../controllers/index.controllers.ts'
+import * as ctrUsuarios from '../controllers/user.controllers.ts'
 const router:Router = new Router();
 
 router.get('/', ({request, response}) => {

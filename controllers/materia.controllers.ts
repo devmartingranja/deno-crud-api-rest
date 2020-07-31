@@ -4,7 +4,7 @@ import { v4 } from "https://deno.land/std/uuid/mod.ts";
 interface Materia {
   id: string;
   name: string;
-  creditos: Number;
+  creditos: number;
   descripcion: string;
 }
 
@@ -53,6 +53,7 @@ export const createMateria = async ({ request, response }: { request: Request, r
     try {
 
         const body = await request.body()
+        console.log(body)
 
         //hasBody -> nos devuelve un boleano, validad si existe un body al enviar la inforamcion         
         if(!request.hasBody) {                    

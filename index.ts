@@ -1,5 +1,5 @@
 import {Application, Router} from 'https://deno.land/x/oak/mod.ts'
-import routerUsuarios from "./routes/index.routes.ts";
+import routerUsuarios from "./routes/user.routes.ts";
 import routerMaterias from "./routes/materias.routes.ts";
 import { oakCors } from "https://deno.land/x/cors/mod.ts";
 

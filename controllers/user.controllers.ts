@@ -4,11 +4,13 @@ import { v4 } from "https://deno.land/std/uuid/mod.ts";
 interface User {
   id: string;
   name: string;
+  edad: number;
 }
 
 let users: User[] = [{
-  id: "0",
+  id: "erewr-fdsf45-54534",
   name: "jose",
+  edad: 10
 }];
 
 export const getUsers = ({ response }: { response: Response }) => {
