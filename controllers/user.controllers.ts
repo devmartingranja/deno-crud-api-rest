@@ -5,12 +5,14 @@ interface User {
   id: string;
   name: string;
   edad: number;
+  img: string;
 }
 
 let users: User[] = [{
   id: "erewr-fdsf45-54534",
   name: "jose",
-  edad: 10
+  edad: 10,
+  img: 'https://png.pngtree.com/element_our/png/20181206/users-vector-icon-png_260862.jpg'
 }];
 
 export const getUsers = ({ response }: { response: Response }) => {
